@@ -21,11 +21,10 @@ test {
 publishing {
     publications {
         maven(MavenPublication) {
-            artifactId = 'git-artifacts'
-            from components.java
+           artifactId = 'git_artifacts'
+         from project.components.java
         }
     }
-
     repositories {
         maven {
             name = "GitHubPackages"
